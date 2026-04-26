@@ -312,7 +312,7 @@ export const GAME = {
 export const DATA = {
   allMusic: (game: GameName): Promise<AllMusic> =>
     // fetch(`${SERVER_CONFIG.DATA_HOST}/d/${game}/00/all-music.json`).then(it => it.json()),
-    fetch(`https://cdn.jsdelivr.net/gh/ViscumPy/viscum_json@main/aquadx_music_data.json`).then(it => it.json()),
+    fetch(`https://net.mai2.link/assets/data/data.json`).then(it => it.json()),
   allItems: (game: GameName): Promise<Record<string, Record<string, any>>> =>
     fetch(`${SERVER_CONFIG.DATA_HOST}/d/${game}/00/all-items.json`).then(it => it.json()),
 }
