@@ -148,7 +148,7 @@ export function parseComposition(item: string, allMusics: Record<string, MusicMe
     rank,
     difficulty: diff,
     // img: `${SERVER_CONFIG.DATA_HOST}/d/${game}/music/00${mapData[0].toString().padStart(6, '0').substring(2)}.png`,
-    img: `https://u.mai2.link/jacket/UI_Jacket_00${mapData[0].toString().padStart(6, '0').substring(2)}.png`,
+    img: `https://u.mai2.link/jacket/UI_Jacket_00${mapData[0].toString().padStart(6, '0').substring(2)}.jpg`,
     ratingChange: calcDxChange()
   }
 }
