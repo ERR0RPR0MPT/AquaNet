@@ -333,7 +333,7 @@
         {#each (showMoreRecent ? d.recent : d.recent.slice(0, 15)) as r, i}
           <div class:alt={i % 2 === 0}>
             <!-- <img src={`${SERVER_CONFIG.DATA_HOST}/d/${game}/music/00${r.musicId.toString().padStart(6, '0').substring(2)}.png`} alt="" on:error={coverNotFound} /> -->
-            <img src={`https://u.mai2.link/jacket/UI_Jacket_00${mapData[0].toString().padStart(6, '0').substring(2)}.jpg`} alt="" on:error={coverNotFound} />
+            <img src={`https://u.mai2.link/jacket/UI_Jacket_00${r.musicId.toString().padStart(6, '0').substring(2)}.jpg`} alt="" on:error={coverNotFound} />
             <div class="info">
               <div>{r.name ?? t("UserHome.UnknownSong")}</div>
               <div>
