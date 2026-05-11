@@ -2,9 +2,9 @@ import type { ChusanMatchingOption } from "./generalTypes"
 
 const DEFAULT_CONFIG = {
   SERVER_NAME: 'Mai2Link',
-  AQUA_HOST: 'https://api-net.mai2.link/aquanet',
+  AQUA_HOST: 'https://xn--9er98m80qbsgqw2c.xn--igrr70arr3c.vip/aquanet',
   DATA_HOST: 'https://aquadx.net',
-  AQUA_CONNECTION: 'api-net.mai2.link',
+  AQUA_CONNECTION: 'xn--9er98m80qbsgqw2c.xn--igrr70arr3c.vip',
   DISCORD_INVITE: 'https://discord.gg',
   TELEGRAM_INVITE: 'https://t.me',
   QQ_INVITE: 'https://qm.qq.com',
