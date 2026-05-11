@@ -156,7 +156,7 @@
 
         <button on:click={() => {
           updateServerConfig({
-            SERVER_NAME: "Mai2Link",
+            SERVER_NAME: "ZundaLink",
             AQUA_HOST: "https://xn--9er98m80qbsgqw2c.xn--igrr70arr3c.vip/aquanet",
             DATA_HOST: "https://aquadx.net",
             AQUA_CONNECTION: "xn--9er98m80qbsgqw2c.xn--igrr70arr3c.vip"

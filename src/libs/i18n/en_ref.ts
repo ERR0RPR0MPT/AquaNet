@@ -41,7 +41,7 @@ export const EN_REF_Welcome = {
   'server-name': 'AquaNet Server Name',
   'welcome.btn-login': 'Log in',
   'welcome.btn-signup': 'Sign up',
-  'welcome.btn-server-mai2-link': 'Use Mai2Link server',
+  'welcome.btn-server-mai2-link': 'Use ZundaLink server',
   'welcome.btn-server-aquadx': 'Use AquaDX server',
   'welcome.btn-server-localhost': 'Use localhost server',
   'welcome.email-password-missing': 'Email and password are required',

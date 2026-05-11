@@ -51,7 +51,7 @@ const zhWelcome: typeof EN_REF_Welcome = {
   'server-name': 'AquaNet 服务器名称',
   'welcome.btn-login': '登录',
   'welcome.btn-signup': '注册',
-  'welcome.btn-server-mai2-link': '使用 Mai2Link 服务器地址',
+  'welcome.btn-server-mai2-link': '使用 ZundaLink 服务器地址',
   'welcome.btn-server-aquadx': '使用 AquaDX 服务器地址',
   'welcome.btn-server-localhost': '使用本地服务器地址',
   'welcome.email-password-missing': '邮箱和密码必须填哦',
