@@ -32,7 +32,7 @@ export const DATA_HOST = 'https://aquadx.net'
 // This will be displayed for users to connect from the client
 export const AQUA_CONNECTION = 'aquadx.hydev.org'
 
-export const TURNSTILE_SITE_KEY = '0x4AAAAAAASGA2KQEIelo9P9'
+export const TURNSTILE_SITE_KEY = '0x4AAAAAADLNmi6RQBRHM0zq'
 export const DISCORD_INVITE = 'https://discord.gg/FNgveqFF7s'
 export const TELEGRAM_INVITE = 'https://t.me/+zBL4RZdyfvUzZGU1'
 export const QQ_INVITE = 'https://qm.qq.com/q/wvNXbXbHbO'

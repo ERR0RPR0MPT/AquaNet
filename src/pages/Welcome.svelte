@@ -66,7 +66,7 @@
       return submitting = false
     }
 
-    if (turnstile === "" && SERVER_CONFIG.AQUA_HOST === "https://aquadx.net/aqua") {
+    if (turnstile === "" && !SERVER_CONFIG.AQUA_HOST.includes('localhost')) {
       // Sleep for 100ms to allow Turnstile to finish
       error = t("welcome.waiting-turnstile")
       return setTimeout(submit, 100)
@@ -190,6 +190,13 @@
           {t('welcome.btn-server-localhost')}
         </button>
 
+        {#if !SERVER_CONFIG.AQUA_HOST.includes('localhost')}
+          <Turnstile siteKey={TURNSTILE_SITE_KEY} bind:reset={turnstileReset}
+                     on:turnstile-callback={e => console.log(turnstile = e.detail.token)}
+                     on:turnstile-error={_ => console.log(error = t("welcome.turnstile-error"))}
+                     on:turnstile-expired={_ => window.location.reload()}
+                     on:turnstile-timeout={_ => console.log(error = t('welcome.turnstile-timeout'))}/>
+        {/if}
         <button on:click={submit}>
           {#if submitting}
             <Icon icon="line-md:loading-twotone-loop"/>
@@ -197,13 +204,6 @@
             {isSignup ? t('welcome.btn-signup') : t('welcome.btn-login')}
           {/if}
         </button>
-        {#if SERVER_CONFIG.AQUA_HOST === "https://aquadx.net/aqua"}
-          <Turnstile siteKey={TURNSTILE_SITE_KEY} bind:reset={turnstileReset}
-                     on:turnstile-callback={e => console.log(turnstile = e.detail.token)}
-                     on:turnstile-error={_ => console.log(error = t("welcome.turnstile-error"))}
-                     on:turnstile-expired={_ => window.location.reload()}
-                     on:turnstile-timeout={_ => console.log(error = t('welcome.turnstile-timeout'))}/>
-        {/if}
       </div>
     {:else if state === "verify"}
       <div class="login-form" transition:slide>
